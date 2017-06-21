@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f2c0a8e-b34a-43f7-b3c9-b06358655c7e" name="Default" comment="">
+    <list default="true" id="7f2c0a8e-b34a-43f7-b3c9-b06358655c7e" name="Default" comment="- Impm">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control/user.js" afterPath="$PROJECT_DIR$/control/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middleware/authenticated.js" afterPath="$PROJECT_DIR$/middleware/authenticated.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -89,8 +88,8 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/control/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="104" column="30" lean-forward="true" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
+            <state relative-caret-position="819">
+              <caret line="155" column="16" lean-forward="false" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
               <folding>
                 <element signature="e#0#57#0" expanded="false" />
               </folding>
@@ -113,8 +112,8 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="93" lean-forward="false" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
+            <state relative-caret-position="306">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#0#57#0" expanded="false" />
               </folding>
@@ -158,8 +157,8 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/service/jwt.js" />
         <option value="$PROJECT_DIR$/middleware/authenticated.js" />
-        <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/control/user.js" />
+        <option value="$PROJECT_DIR$/routes/user.js" />
       </list>
     </option>
   </component>
@@ -181,9 +180,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -362,7 +362,8 @@
       <workItem from="1496834920809" duration="11000" />
       <workItem from="1496941641106" duration="618000" />
       <workItem from="1496942272048" duration="3770000" />
-      <workItem from="1497110143372" duration="1027000" />
+      <workItem from="1497110143372" duration="1058000" />
+      <workItem from="1498063658643" duration="921000" />
     </task>
     <task id="LOCAL-00001" summary="- Añadido servicio jwt para tokens&#10;- Añadido middleware&#10;- Añadido método de actualización de usuario">
       <created>1496945484883</created>
@@ -371,14 +372,21 @@
       <option name="project" value="LOCAL" />
       <updated>1496945484883</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Implementado método para subir y modificar imagen de usuario.">
+      <created>1497111189675</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1497111189675</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11427000" />
+    <option name="totallyTimeSpent" value="12379000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24843423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -408,7 +416,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Añadido servicio jwt para tokens&#10;- Añadido middleware&#10;- Añadido método de actualización de usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Añadido servicio jwt para tokens&#10;- Añadido middleware&#10;- Añadido método de actualización de usuario" />
+    <MESSAGE value="- Implementado método para subir y modificar imagen de usuario." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Implementado método para subir y modificar imagen de usuario." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -860,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="93" lean-forward="false" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
+        <state relative-caret-position="306">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#57#0" expanded="false" />
           </folding>
@@ -870,8 +879,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/control/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="104" column="30" lean-forward="true" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
+        <state relative-caret-position="819">
+          <caret line="155" column="16" lean-forward="false" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
           <folding>
             <element signature="e#0#57#0" expanded="false" />
           </folding>
