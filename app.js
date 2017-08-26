@@ -10,7 +10,8 @@ var app = express();
 
 // Cargar Rutas
 var user_routes = require('./routes/user');
-var artis_routes = require('./routes/artist');
+var artist_routes = require('./routes/artist');
+var album_routes = require('./routes/album');
 
 // Parsea los datos binarios de mondodb
 // a json para poder verlos.
@@ -22,6 +23,7 @@ app.use(bodyParser.json());
 // Rutas base
 
 app.use('/api', user_routes);
-app.use('/api', artis_routes);
+app.use('/api', artist_routes);
+app.use('/api', album_routes);
 
 module.exports = app;
