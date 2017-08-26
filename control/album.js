@@ -12,6 +12,30 @@ function getAlbum(req, res) {
     res.status(200).send({message: 'Acción getAlbum'});
 }
 
+function saveAlbum(req, res) {
+    var album = new Album();
+    var params = req.body;
+
+    album.title = params.title;
+    album.description = paramos.description;
+    album.year = params.year;
+    album.image = 'null';
+    album.artist = params.artist;
+
+    album.save((err, albumStored) => {
+        if (err) {
+            res.status(500).send({message: 'Error en la petición'});
+        } else {
+            if (!albumStored) {
+                res.status(404).send({message: 'No se ha guardado el álbum'});
+            } else {
+                res.status(200).send({album: albumStored});
+            }
+        }
+    });
+}
+
 module.exports = {
-    getAlbum
+    getAlbum,
+    saveAlbum
 };
