@@ -21,8 +21,8 @@
       <file leaf-file-name="album.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control/album.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="118" column="16" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+            <state relative-caret-position="562">
+              <caret line="148" column="33" lean-forward="false" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -31,8 +31,18 @@
       <file leaf-file-name="album.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/album.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="280">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="artist.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/artist.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -66,8 +76,8 @@
         <option value="$PROJECT_DIR$/routes/artist.js" />
         <option value="$PROJECT_DIR$/control/artist.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/album.js" />
         <option value="$PROJECT_DIR$/control/album.js" />
+        <option value="$PROJECT_DIR$/routes/album.js" />
       </list>
     </option>
   </component>
@@ -274,7 +284,7 @@
       <workItem from="1496942272048" duration="3770000" />
       <workItem from="1497110143372" duration="1058000" />
       <workItem from="1498063658643" duration="2053000" />
-      <workItem from="1503741504770" duration="10137000" />
+      <workItem from="1503741504770" duration="10793000" />
     </task>
     <task id="LOCAL-00001" summary="- Añadido servicio jwt para tokens&#10;- Añadido middleware&#10;- Añadido método de actualización de usuario">
       <created>1496945484883</created>
@@ -381,11 +391,25 @@
       <option name="project" value="LOCAL" />
       <updated>1503762334380</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- Añadido método para eliminar álbums">
+      <created>1503762729552</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1503762729552</updated>
+    </task>
+    <task id="LOCAL-00017" summary="- Añadido método para eliminar álbums">
+      <created>1503762838200</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1503762838200</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23648000" />
+    <option name="totallyTimeSpent" value="24304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
@@ -432,7 +456,8 @@
     <MESSAGE value="- Implementado método para mostras álbums" />
     <MESSAGE value="- Añadido método para ver todos los albums de la base de datos" />
     <MESSAGE value="- Añadido método para actualizar álbums" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Añadido método para actualizar álbums" />
+    <MESSAGE value="- Añadido método para eliminar álbums" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Añadido método para eliminar álbums" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -821,16 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="147" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#57#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -849,18 +864,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/artist.js">
+    <entry file="file://$PROJECT_DIR$/control/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="-76">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="147" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#57#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control/artist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="102" column="16" lean-forward="false" selection-start-line="102" selection-start-column="16" selection-end-line="122" selection-end-column="19" />
+        <state relative-caret-position="663">
+          <caret line="167" column="1" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="167" selection-end-column="1" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
@@ -869,16 +886,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/control/album.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="118" column="16" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+        <state relative-caret-position="562">
+          <caret line="148" column="33" lean-forward="false" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/artist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/album.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="280">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding />
         </state>
       </provider>

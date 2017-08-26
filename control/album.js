@@ -112,10 +112,53 @@ function deleteAlbum() {
     });
 }
 
+function uploadImage(req,res){
+    var albumId = req.params.id;
+    var file_name = 'No subido';
+
+    if(req.files) {
+        var file_path = req.files.image.path;
+        var file_split = file_path.split('\\');
+        var file_name = file_split[2];
+
+        var ext_split = file_name.split('\.');
+        var file_ext = ext_split[1];
+
+        if (file_ext == 'png' || file_ext == 'jpg' ||file_ext == 'gif') {
+            Album.findByIdAndUpdate(albumId, {image: file_name}, (err, albumUpdated) =>{
+                if (!albumUpdated) {
+                    res.status(404).send({message: 'No se ha podido actualizar el album'});
+                } else {
+                    res.status(200).send({album: albumUpdated});
+                }
+            });
+        } else {
+            req.status(200).send({message: 'Extensión no válida'});
+        }
+    } else {
+        req.status(200).send({message: 'No se ha subido ninguna imagen'});
+    }
+}
+
+function getImageFile(req, res) {
+    var imageFile = req.params.getImageFile;
+    var pathFile = './uploads/albums/'+imageFile;
+
+    fs.exists(pathFile, function (exists) {
+        if (exists) {
+            res.sendFile(path.resolve(pathFile));
+        } else {
+            req.status(200).send({message: 'No existe la imagen...'});
+        }
+    });
+}
+
 module.exports = {
     getAlbum,
     saveAlbum,
     getAlbums,
     updateAlbum,
-    deleteAlbum
+    deleteAlbum,
+    uploadImage,
+    getImageFile
 };
