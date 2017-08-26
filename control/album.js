@@ -9,7 +9,19 @@ var Album = require('../model/album');
 var Song = require('../model/song');
 
 function getAlbum(req, res) {
-    res.status(200).send({message: 'Acción getAlbum'});
+    var albumId = req.params.id;
+
+    Album.findById(albumId).populate({path: 'artist'}).exec((err, album) => {
+        if (err) {
+            res.status(500).send({message: 'Error en la petición'});
+        } else {
+            if (!album) {
+                res.status(404).send({message: 'No existe el album'});
+            } else {
+                res.status(200).send({album});
+            }
+        }
+    });
 }
 
 function saveAlbum(req, res) {
