@@ -8,8 +8,9 @@ var ArtistController = require('../control/artist');
 var api = express.Router();
 var md_auth = require('../middleware/authenticated');
 
-api.get('/artist:id', md_auth.ensureAuth, ArtistController.getArtist);
+api.get('/artist/:id', md_auth.ensureAuth, ArtistController.getArtist);
 api.post('/artist', md_auth.ensureAuth, ArtistController.saveArtist);
-api.get('/artist:page?', md_auth.ensureAuth, ArtistController.getArtists);
+api.get('/artist/:page?', md_auth.ensureAuth, ArtistController.getArtists);
+api.put('/artist/:id', md_auth.ensureAuth, ArtistController.updateArtist);
 
 module.exports = api;
