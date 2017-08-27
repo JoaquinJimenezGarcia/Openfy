@@ -13,6 +13,30 @@ function getSong(res, req) {
 
 }
 
-module.exports = {
-    getSong
+function saveSong(req, res) {
+    var song = new Song();
+    var params = req.body;
+
+    song.number = params.number;
+    song.name = params.name;
+    song.duration = params.duration;
+    song.file = null;
+    song.album = params.album;
+
+    song.save((err, songStored) => {
+        if (err) {
+            res.status(500).send({message: 'Error en el servidor'});
+        } else {
+            if (!songStored) {
+                res.status(404).send({message: 'No se ha guardado la canción'});
+            } else {
+                res.status(200).send({song: songStored});
+            }
+        }
+    });
 }
+
+module.exports = {
+    getSong,
+    saveSong
+};
