@@ -70,6 +70,22 @@ function updateSong(req, res) {
     });
 }
 
+function deleteSong(req, res) {
+    var songId = req.params.id;
+
+    Song.findByIdAndRemove(songId, (err, songRemoved) => {
+        if (err) {
+            res.status(500).send({message: 'Error en el servidor'});
+        } else {
+            if (!songRemoved) {
+                res.status(404).send({message: 'No se ha borrado la canción'});
+            } else {
+                res.status(200).send({song: songRemoved});
+            }
+        }
+    })
+}
+
 function saveSong(req, res) {
     var song = new Song();
     var params = req.body;
@@ -97,5 +113,6 @@ module.exports = {
     getSong,
     saveSong,
     getSongs,
-    updateSong
+    updateSong,
+    deleteSong
 };
