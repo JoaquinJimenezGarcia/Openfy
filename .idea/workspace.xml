@@ -18,21 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="song.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="song.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control/song.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="song.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="song.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/song.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+            <state relative-caret-position="240">
+              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -277,7 +277,7 @@
       <workItem from="1497110143372" duration="1058000" />
       <workItem from="1498063658643" duration="2053000" />
       <workItem from="1503741504770" duration="10995000" />
-      <workItem from="1503851655972" duration="942000" />
+      <workItem from="1503851655972" duration="1446000" />
     </task>
     <task id="LOCAL-00001" summary="- Añadido servicio jwt para tokens&#10;- Añadido middleware&#10;- Añadido método de actualización de usuario">
       <created>1496945484883</created>
@@ -412,11 +412,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503852175776</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="- Añadido método de guardar canción">
+      <created>1503852639477</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1503852639477</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25448000" />
+    <option name="totallyTimeSpent" value="25952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1520" y="23" width="1840" height="1057" extended-state="0" />
@@ -466,7 +473,8 @@
     <MESSAGE value="- Añadido método para eliminar álbums" />
     <MESSAGE value="- Añadido método para subir y ver imágenes de álbums" />
     <MESSAGE value="- Creados modelo y controlador de Cancion&#10;- Añadidas rutas a app.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Creados modelo y controlador de Cancion&#10;- Añadidas rutas a app.js" />
+    <MESSAGE value="- Añadido método de guardar canción" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Añadido método de guardar canción" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -824,18 +832,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/song.js">
+    <entry file="file://$PROJECT_DIR$/control/song.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        <state relative-caret-position="400">
+          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/song.js">
+    <entry file="file://$PROJECT_DIR$/routes/song.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding />
         </state>
       </provider>
