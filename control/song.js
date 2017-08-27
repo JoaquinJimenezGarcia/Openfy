@@ -8,7 +8,7 @@ var Artist = require('../model/artist');
 var Album = require('../model/album');
 var Song = require('../model/song');
 
-function getSong(res, req) {
+function getSong(req, res) {
     var songId = req.params.id;
 
     Song.findById(songId).populate({path:'album'}).exec((err, song) => {
@@ -19,6 +19,35 @@ function getSong(res, req) {
                 res.status(404).send({message: 'La canción no existe'});
             } else {
                 res.status(200).send({song});
+            }
+        }
+    });
+}
+
+function getSongs(req, res) {
+    var albumId = req.params.album;
+    var find;
+
+    if (!albumId) {
+        find = Song.find({}).sort('number');
+    } else {
+        find = Song.find({album: albumId}).sort('number');
+    }
+
+    find.populate({
+        path: 'album',
+        populate: {
+            path: 'artist',
+            model: 'Artist'
+        }
+    }).exec(function (err, songs) {
+        if (err) {
+            res.status(500).send({message: 'Error en la petición'});
+        } else {
+            if (!songs) {
+                res.status(404).send({message: 'No hay canciones'});
+            } else {
+                res.status(200).send({songs});
             }
         }
     });
@@ -49,5 +78,6 @@ function saveSong(req, res) {
 
 module.exports = {
     getSong,
-    saveSong
+    saveSong,
+    getSongs
 };
